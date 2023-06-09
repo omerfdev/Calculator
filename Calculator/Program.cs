@@ -10,17 +10,11 @@ switch (process)
     case '+':
         MathOperation mopSum = new MathOperation();
         Console.WriteLine("Please Enter Number");
-
         mopSum.NumberX = double.Parse(Console.ReadLine());
-
         Console.WriteLine("Please Enter Number");
-
         mopSum.NumberY = double.Parse(Console.ReadLine());
-
-
         Console.WriteLine(mopSum.Sum(mopSum.NumberX, mopSum.NumberY));
         Console.ReadLine();
-
         break;
     case '-':
         MathOperation mopDif = new MathOperation();
@@ -32,7 +26,6 @@ switch (process)
         Console.ReadLine();
         break;
     case '*':
-
         MathOperation mopMul = new MathOperation();
         Console.WriteLine("Please Enter Number");
         mopMul.NumberX = double.Parse(Console.ReadLine());
@@ -42,7 +35,6 @@ switch (process)
         Console.ReadLine();
         break;
     case '/':
-
         MathOperation mopDiv = new MathOperation();
         Console.WriteLine("Please Enter Number");
         mopDiv.NumberX = double.Parse(Console.ReadLine());
@@ -53,9 +45,7 @@ switch (process)
         break;
     default:
         Console.WriteLine("Unhandled Process ");
-
         break;
-
 }
 //bool alwaysRun = true;
 //while (alwaysRun)
