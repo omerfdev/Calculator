@@ -5,15 +5,18 @@ using System.Globalization;
 Console.WriteLine("Welcome Calculate Program");
 Console.WriteLine("Please Enter For The Process You Want To Do : Collect + , Extraction - , Hitting *, Divide / ");
 char process = Convert.ToChar(Console.ReadLine());
+
 switch (process)
 {
+
     case '+':
+
         MathOperation mopSum = new MathOperation();
         Console.WriteLine("Please Enter Number");
         mopSum.NumberX = double.Parse(Console.ReadLine());
         Console.WriteLine("Please Enter Number");
         mopSum.NumberY = double.Parse(Console.ReadLine());
-        Console.WriteLine(mopSum.Sum(mopSum.NumberX, mopSum.NumberY));
+        Console.WriteLine(MathOperation.sumDelegate(mopSum.NumberX, mopSum.NumberY));
         Console.ReadLine();
         break;
     case '-':
@@ -22,7 +25,7 @@ switch (process)
         mopDif.NumberX = double.Parse(Console.ReadLine());
         Console.WriteLine("Please Enter Number");
         mopDif.NumberY = double.Parse(Console.ReadLine());
-        Console.WriteLine(mopDif.Difference(mopDif.NumberX, mopDif.NumberY));
+        Console.WriteLine(MathOperation.difDelegate(mopDif.NumberX, mopDif.NumberY));
         Console.ReadLine();
         break;
     case '*':
@@ -31,7 +34,7 @@ switch (process)
         mopMul.NumberX = double.Parse(Console.ReadLine());
         Console.WriteLine("Please Enter Number");
         mopMul.NumberY = double.Parse(Console.ReadLine());
-        Console.WriteLine(mopMul.Multiply(mopMul.NumberX, mopMul.NumberY));
+        Console.WriteLine(MathOperation.mulDelegate(mopMul.NumberX, mopMul.NumberY));
         Console.ReadLine();
         break;
     case '/':
@@ -40,7 +43,7 @@ switch (process)
         mopDiv.NumberX = double.Parse(Console.ReadLine());
         Console.WriteLine("Please Enter Number");
         mopDiv.NumberY = double.Parse(Console.ReadLine());
-        Console.WriteLine(mopDiv.Divide(mopDiv.NumberX, mopDiv.NumberY));
+        Console.WriteLine(MathOperation.divDelegate(mopDiv.NumberX, mopDiv.NumberY));
         Console.ReadLine();
         break;
     default:
