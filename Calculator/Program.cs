@@ -2,6 +2,7 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
+
 Console.WriteLine("Welcome Calculate Program");
 Console.WriteLine("Please Enter For The Process You Want To Do : Collect + , Extraction - , Hitting *, Divide / ");
 char process = Convert.ToChar(Console.ReadLine());
